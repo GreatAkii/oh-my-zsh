@@ -1,6 +1,9 @@
 # Zsh with Powerlevel10k Docker Image
 
-This Docker image is based on Ubuntu 24.04 and comes pre-configured with Zsh, Oh My Zsh, Powerlevel10k theme, and useful plugins like `zsh-autosuggestions` and `zsh-syntax-highlighting`.
+This Docker image is based on Ubuntu 24.04 and comes pre-configured with ![Static Badge](https://img.shields.io/badge/zsh-tomato)
+, ![Static Badge](https://img.shields.io/badge/Oh%20my%20Zsh-grey)
+, ![Static Badge](https://img.shields.io/badge/Powerlevel10k%20theme-green)
+, and useful plugins like ![Static Badge](https://img.shields.io/badge/zsh_autosuggestions-%238A2BE2) and ![Static Badge](https://img.shields.io/badge/zsh_syntax_highlighting-teal).
 
 ## Features
 
@@ -8,10 +11,12 @@ This Docker image is based on Ubuntu 24.04 and comes pre-configured with Zsh, Oh
 - **Oh My Zsh**: A delightful, open-source, community-driven framework for managing your Zsh configuration.
 - **Powerlevel10k**: A theme for Zsh that emphasizes speed, flexibility, and out-of-the-box experience.
 - **Plugins**:
-  - `zsh-autosuggestions`: Suggests commands as you type based on history and completions.
-  - `zsh-syntax-highlighting`: Provides syntax highlighting for the shell.
+  - ![Static Badge](https://img.shields.io/badge/zsh_autosuggestions-%238A2BE2): Suggests commands as you type based on history and completions.
+  - ![Static Badge](https://img.shields.io/badge/zsh_syntax_highlighting-teal): Provides syntax highlighting for the shell.
 
 ## Installation
+
+![Static Badge](https://img.shields.io/badge/Install%20and%20run%20docker%20engine%20first-red)
 
 To build and run this Docker image, follow these steps:
 
@@ -24,15 +29,24 @@ To build and run this Docker image, follow these steps:
     ```sh
     docker run -it zsh-powerlevel10k
     ```
+    
+![Static Badge](https://img.shields.io/badge/To_use_already_build_image-run_following_cmd%3A-blue)
+
+```sh
+docker pull greatakii/ubuntu-zsh:latest
+```
 
 ## Configuration
 
 The Dockerfile performs the following steps:
 
-1. Updates the package list and installs necessary packages (`zsh`, `curl`, `git`, `nano`).
+1. Updates the package list and installs necessary packages (![Static Badge](https://img.shields.io/badge/zsh-tomato), ![Static Badge](https://img.shields.io/badge/curl-%23522258)
+, ![Static Badge](https://img.shields.io/badge/git-%239CA986)
+, ![Static Badge](https://img.shields.io/badge/nano-%23987D9A)
+).
 2. Installs Oh My Zsh without prompting.
 3. Clones the Powerlevel10k theme into the Oh My Zsh custom themes directory.
-4. Sets the Powerlevel10k theme in the `.zshrc` file.
+4. Sets the ![Static Badge](https://img.shields.io/badge/Powerlevel10k%20theme-green) in the `.zshrc` file.
 5. Appends a custom Powerlevel10k configuration to the `.zshrc` file.
 6. Clones the `zsh-autosuggestions` and `zsh-syntax-highlighting` plugins into the Oh My Zsh custom plugins directory.
 7. Adds the plugins to the `.zshrc` file.
