@@ -1,0 +1,26 @@
+# Default Powerlevel10k configuration
+   POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+     os_icon                 # os identifier
+     dir                     # current directory
+     vcs                     # git status
+   )
+   
+   POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+     status                  # exit code of the last command
+     command_execution_time  # duration of the last command
+     background_jobs         # presence of background jobs
+     time                    # current time
+   )
+   
+   # Other default settings
+   POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+   POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+   POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+   POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
+   POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%f➜ '
+   
+   # Load default color scheme
+   (( ${+POWERLEVEL9K_COLOR_SCHEME} )) || POWERLEVEL9K_COLOR_SCHEME='dark'
+   
+   # Use default TERM options
+   (( ${+POWERLEVEL9K_TERM_SHELL_INTEGRATION} )) || POWERLEVEL9K_TERM_SHELL_INTEGRATION=true
