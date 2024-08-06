@@ -1,4 +1,4 @@
-# Zsh with Powerlevel10k Docker Image
+# Ubuntu with Zsh and Powerlevel10k Docker Image
 
 This Docker image is based on Ubuntu 24.04 and comes pre-configured with ![Static Badge](https://img.shields.io/badge/zsh-tomato)
 , ![Static Badge](https://img.shields.io/badge/Oh%20my%20Zsh-grey)
